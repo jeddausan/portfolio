@@ -1,0 +1,155 @@
+@font-face {
+	font-family: MuseoFont;
+	src: url(/assets/Museo.ttf) format('ttf');
+}
+
+body{
+	font-family: MuseoFont, sans-serif;
+    background: url('./assets/bg.jpg') center/cover no-repeat fixed;
+    background-size: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	text-align: center;
+	padding: 20px 0;
+}
+
+nav a{
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	color: grey;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bolder;
+}
+
+a:hover{
+	color: #e4144f;
+}
+
+.name-wrapper h1 span{
+    color: #e4144f;
+}
+
+.name-wrapper h1{
+    margin: 0;
+}
+
+
+.name-wrapper{
+    margin-top: 400px;
+    margin-left: 250px;
+    font-size: 40px;
+}
+
+.name-wrapper h5{
+    margin-left: 80px;
+    margin-bottom: 0;
+}
+
+.name-wrapper p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+button {
+    margin-top: 50px;
+    width: 15%;
+    height: 50%;
+    padding: 15px 32px;
+    background-color: #e4144f;
+    color: white;
+    border: none;
+    border-radius: 120px;
+		cursor: pointer;
+}
+
+.container{
+    font-size: 30px;
+    text-align: center;
+}
+
+.icon-container{
+	margin-top: 10%;
+	margin-left: 250px;
+	display: flex;
+	gap: 10px;
+}
+
+.icon-container a {
+	width: 50px;
+	transition: all 250ms ease-in-out;
+	display: flex;
+}
+
+.icon-container a:hover {
+	width: 180px;
+}
+
+.icon-container a img{
+	width: 50px;
+	filter: grayscale(1);
+	opacity: .4;
+	position: relative;
+	z-index: 9;
+}
+
+.icon-container a span{
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: -50px;
+	opacity: 0;
+	transition: all 200ms ease-in-out;
+	z-index: 0;
+	/* transform: translateX(-100%); */
+	font-size: 24px;
+	padding: 5px;
+	border-radius: 25px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-right: 20px;
+	min-width: 50px;
+}
+.icon-container a #fb	{
+	color: white;
+	background-color: #1877f2;
+} 
+
+.icon-container a #tweet	{
+	color: white;
+	background-color: #03a9f4;
+}
+
+.icon-container a #insta	{
+	color: white;
+	background: linear-gradient(to right, #fadb20, #a21cae);
+}
+
+.icon-container a #link	{
+	color: white;
+	background-color: #009ae5;
+}
+
+
+.icon-container a:hover span{
+	opacity: 1;
+	visibility: visible;
+	left: -50px;
+	color: #e4144f;
+	padding-left: 60px;
+	min-width: max-content;
+}
+
+
+.icon-container a:hover img{
+	filter: grayscale(0);
+	transition: 250ms ease-in-out;
+	opacity: 1;
+}
